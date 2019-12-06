@@ -1,19 +1,50 @@
-import React from 'react';
-import styles from './index.css';
-import { formatMessage } from 'umi-plugin-locale';
+import Draft from './Draft';
 
-export default function() {
-  return (
-    <div className={styles.normal}>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/pages/index.js</code> and save to reload.</li>
-        <li>
-          <a href="https://umijs.org/guide/getting-started.html">
-            {formatMessage({ id: 'index.start' })}
-          </a>
-        </li>
-      </ul>
-    </div>
-  );
-}
+export default Draft;
+// import React, { useEffect, useRef } from 'react';
+// import Two from 'two.js';
+// import styles from './index.css';
+
+// function DraftMenu() {
+//   return <div className={styles['suri-draft-menu']}>menu</div>;
+// }
+
+// function DraftStage() {
+//   const stageContainer = useRef(null);
+
+//   useEffect(() => {
+//     const canvas: unknown = stageContainer.current;
+//     let params = { width: 285, height: 200 };
+//     let two = new Two(params).appendTo(canvas as HTMLElement);
+
+//     let circle = two.makeCircle(72, 100, 50);
+//     let rect = two.makeRectangle(213, 100, 100, 100);
+
+//     console.log('[two]', two);
+//     console.log('[circle]', circle);
+//     console.log('[rect]', rect);
+
+//     circle.fill = '#FF8000';
+//     circle.stroke = 'orangered';
+//     circle.linewidth = 5;
+
+//     rect.fill = 'rgb(0, 200, 255)';
+//     rect.opacity = 0.75;
+//     rect.noStroke();
+
+//     two.update();
+//   }, []);
+
+//   return <div ref={stageContainer} />;
+// }
+
+// function Container() {
+//   return (
+//     <div className={styles['suri-container']}>
+//       <DraftMenu />
+//       <DraftStage />
+//     </div>
+//   );
+// }
+
+// export default Container;
