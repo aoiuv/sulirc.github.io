@@ -11,10 +11,10 @@ class DraftCanvas extends React.Component {
   }
 
   componentDidMount() {
-    this.initCanvas();
+    this.init();
   }
 
-  initCanvas() {
+  init() {
     const canvas: unknown = this.canvas.current;
     let params = { width: 285, height: 200 };
     let draft = new Draft(params).appendTo(canvas as HTMLElement);
@@ -39,7 +39,7 @@ class DraftCanvas extends React.Component {
 
   render() {
     return (
-      <div className="suri__draft-canvas">
+      <div className={style.suri__draft_canvas}>
         <div ref={this.canvas} />
       </div>
     );
