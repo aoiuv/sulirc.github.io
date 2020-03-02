@@ -9,11 +9,13 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@types/two.js": "^0.7.2",
     "antd": "^3.19.5",
     "dva": "^2.6.0-beta.6",
-    "dva-immer": "^0.4.18",
+    "hotkeys-js": "^3.7.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-hotkeys": "^2.0.0",
     "rxjs": "^6.5.3",
     "two.js": "^0.7.0-beta.3"
   },
