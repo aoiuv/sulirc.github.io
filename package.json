@@ -3,6 +3,7 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
+    "build:site": "npm run build && mv ./dist/index.html index.html",
     "test": "umi test",
     "lint:es": "eslint --ext .js src mock tests",
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\"",
@@ -37,7 +38,7 @@
     "tslint": "^5.12.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
-    "umi": "^3.0.0",
+    "umi": "^2.9.6",
     "umi-plugin-react": "^1.8.0",
     "umi-types": "^0.3.0"
   },
