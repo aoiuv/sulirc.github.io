@@ -47,7 +47,7 @@
       "tslint --fix",
       "git add"
     ],
-    "*.{js,jsx}": [
+    "*.{jsx}": [
       "eslint --fix",
       "git add"
     ]
